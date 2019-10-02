@@ -4,6 +4,7 @@ import (
 	"crypto/sha256"
 	"encoding/json"
 	"flag"
+	"github.com/hexian000/udpmux"
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/pbkdf2"
 	"io/ioutil"
@@ -11,7 +12,6 @@ import (
 	"net"
 	"os"
 	"time"
-	"udpmux"
 )
 
 func prepare() *udpmux.Instance {
